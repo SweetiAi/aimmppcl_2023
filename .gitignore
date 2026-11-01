@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+~$*
+
+# Oracle planning runtime / recovery artifacts
+**/resume.json
+**/STOP_REQUESTED
+**/worker_logs/
+**/runtime/
+**/tmp/
+**/temp/
+
+# Large serialized checkpoints / snapshots
+*.gzsnap
+*.pkl
+*.pickle
+
+# Pilot raw/heavy outputs
+results/oracle_depth/**/checkpoints/
+results/oracle_depth/**/plans/
+results/oracle_depth/**/rollouts/
+results/oracle_depth/**/raw_rollouts.csv
+results/oracle_depth/**/resume.json
+
+# Keep curated summaries and figures under version control
+!results/summary/
+!results/summary/**
+!figures/
+!figures/**
+!docs/
+!docs/**
+
+# Local analysis exports
+analysis/_scratch/
+analysis/_local/
+
+# Coverage / build
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
